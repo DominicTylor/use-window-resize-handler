@@ -1,7 +1,2 @@
-src
-tsconfig.json
-tsconfig.module.json
-tslint.json
-build/docs
 .nyc_output
 *.log
