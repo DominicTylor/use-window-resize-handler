@@ -19,7 +19,11 @@
     "url": "https://github.com/MoHax22rus/use-window-resize-handler/issues"
   },
   "homepage": "https://github.com/MoHax22rus/use-window-resize-handler#readme",
-  "keywords": [],
+  "keywords": [
+    "react",
+    "hooks",
+    "typescript support"
+  ],
   "peerDependencies": {
     "react": "^16.8.0-alpha.1"
   },
