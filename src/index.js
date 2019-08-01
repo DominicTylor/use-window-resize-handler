@@ -12,7 +12,7 @@ const windowResizeDebounce = () => {
     timer = setTimeout(handleWindowResize, 100);
 };
 
-export const useWindowResizeHandler = (fn, ...args) => {
+const useWindowResizeHandler = (fn, ...args) => {
     const [symbolFn] = useState(Symbol());
 
     ResizeHandlers[symbolFn] = fn.bind(null, ...args);
@@ -35,3 +35,5 @@ export const useWindowResizeHandler = (fn, ...args) => {
         };
     }, []);
 };
+
+export default useWindowResizeHandler;

@@ -1,14 +1,29 @@
 {
   "name": "use-window-resize-handler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Use window resize handler hook",
   "main": "src/index.js",
-  "typings": "build/main/index.d.ts",
-  "module": "build/module/index.js",
-  "repository": "https://github.com/MoHax22rus/use-window-resize-handler",
+  "types": "./types/index.d.ts",
+  "files": [
+    "src",
+    "types"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MoHax22rus/use-window-resize-handler"
+  },
+
+  "author": "",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MoHax22rus/use-window-resize-handler/issues"
+  },
+  "homepage": "https://github.com/MoHax22rus/use-window-resize-handler#readme",
   "keywords": [],
+  "peerDependencies": {
+    "react": "^16.8.0-alpha.1"
+  },
   "devDependencies": {
-    "react": "^16.8.6"
+    "react": "^16.8.0-alpha.1"
   }
 }
