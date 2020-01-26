@@ -1,3 +1,5 @@
+[![codecov.io](https://img.shields.io/codecov/c/github/DominicTylor/use-window-resize-handler/master.svg?style=flat-square)](http://codecov.io/github/DominicTylor/use-window-resize-handler?branch=master)
+
 # use-window-resize-handler
 
 example:
