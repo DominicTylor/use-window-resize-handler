@@ -1,33 +1,53 @@
 {
   "name": "use-window-resize-handler",
-  "version": "1.0.1",
-  "description": "Use window resize handler hook",
-  "main": "src/index.js",
-  "types": "./types/index.d.ts",
-  "files": [
-    "src",
-    "types"
-  ],
+  "version": "1.0.2",
+  "description": "Window resize handler hook",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MoHax22rus/use-window-resize-handler"
+    "url": "https://github.com/DominicTylor/use-window-resize-handler"
   },
-
-  "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MoHax22rus/use-window-resize-handler/issues"
+    "url": "https://github.com/DominicTylor/use-window-resize-handler/issues"
   },
-  "homepage": "https://github.com/MoHax22rus/use-window-resize-handler#readme",
+  "homepage": "https://github.com/DominicTylor/use-window-resize-handler#readme",
   "keywords": [
     "react",
     "hooks",
-    "typescript support"
+    "resize"
   ],
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "scripts": {
+    "test": "cross-env CI=1 react-scripts test --env=jsdom --coverage",
+    "test:watch": "react-scripts test --env=jsdom",
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "dependencies": {},
   "peerDependencies": {
-    "react": "^16.8.0-alpha.1"
+    "react": "^16.9.0"
   },
   "devDependencies": {
-    "react": "^16.8.0-alpha.1"
+    "@babel/core": "7.8.3",
+    "@babel/runtime": "7.8.3",
+    "@testing-library/react-hooks": "3.2.1",
+    "@types/jest": "24.9.1",
+    "@types/react": "16.9.19",
+    "cross-env": "7.0.0",
+    "react": "16.12.0",
+    "react-scripts": "3.3.0",
+    "react-test-renderer": "16.12.0",
+    "rollup": "1.29.1",
+    "rollup-plugin-commonjs": "10.1.0",
+    "rollup-plugin-peer-deps-external": "2.2.0",
+    "rollup-plugin-typescript2": "0.25.3",
+    "typescript": "3.7.5"
   }
 }

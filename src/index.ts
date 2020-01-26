@@ -1,18 +1,19 @@
 import { useEffect, useState } from 'react';
 
-let timer;
+let timer: number;
 let isResizeWindowHandlerSet = false;
 const ResizeHandlers = {};
-const handleWindowResize = () =>
-    Object.getOwnPropertySymbols(ResizeHandlers).forEach((key) =>
-        ResizeHandlers[key]()
-    );
-const windowResizeDebounce = () => {
-    clearTimeout(timer);
-    timer = setTimeout(handleWindowResize, 100);
-};
 
-const useWindowResizeHandler = (fn, ...args) => {
+const handleWindowResize = (): void => {
+    Object.getOwnPropertySymbols(ResizeHandlers).forEach((key: symbol) => ResizeHandlers[key]());
+}
+
+const windowResizeDebounce = (): void => {
+    window.clearTimeout(timer);
+    timer = window.setTimeout(handleWindowResize, 100);
+}
+
+const useWindowResizeHandler = (fn: Function, ...args: any): void => {
     const [symbolFn] = useState(Symbol());
 
     ResizeHandlers[symbolFn] = fn.bind(null, ...args);
