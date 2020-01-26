@@ -1,2 +1,5 @@
 .nyc_output
 *.log
+.idea
+.git
+coverage

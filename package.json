@@ -1,10 +1,11 @@
 {
   "name": "use-window-resize-handler",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Window resize handler hook",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
+  "author": "Dominic Tylor",
   "jsnext:main": "dist/index.es.js",
   "repository": {
     "type": "git",
