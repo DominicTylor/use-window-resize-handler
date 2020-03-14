@@ -1,5 +1,11 @@
+.gitignore
+.travis.yml
+rollup.config.js
+tsconfig.json
+tsconfig.test.json
+/src
 .nyc_output
 *.log
 .idea
 .git
-coverage
+/coverage
